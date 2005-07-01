@@ -1,0 +1,62 @@
+Business::Bof::Client 0.06
+==========================
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Build.PL
+   perl Build
+   perl Build test
+   perl Build install
+
+SSL
+
+A couple of notes about SSL (introduced in Bof 0.02).
+
+You need two keys to certify your server. If you want to use self signed
+certificates, you should be able to create them with something like
+this:
+
+openssl req -new -nodes -x509 -out cert.pem -keyout key.pem -days 365 \
+   -subj "/C=US/ST=CO/L=City/CN=localhost/emailAddress=root@localhost"
+
+One problem I encountered with SSL had nothing to do with the server,
+but rather was hidden deep inside SOAP::Lite. The "500 Can't locate
+object method "new" via package "LWP::Protocol::https::Socket" wasn't
+the most helpful one.
+
+The problem turned out to be two missing modules:
+
+Net::SSL and
+IO::Socket::SSL
+
+Perhaps SOAP::Lite recommends them, but they're not required.
+
+
+LICENSE
+
+Business::Bof is copyright (c) 2004-2005 Kaare Rasmussen 
+(kar at kakidata dot)
+
+This module is free software; you can redistribute it and/or modify it
+under the terms of either:
+
+a) the GNU General Public License as published by the Free Software
+Foundation; either version 1, or (at your option) any later version,
+or
+
+b) the "Artistic License" which comes with this module.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See either
+the GNU General Public License or the Artistic License for more details.
+
+You should have received a copy of the Artistic License with this
+module, in the file ARTISTIC.  If not, I'll be glad to provide one.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
+USA

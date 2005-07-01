@@ -1,0 +1,36 @@
+2005-07-01   Kaare Rasmussen <kar at kakidata dot dk>
+
+    Release 0.06
+
+    Splitting Business::Bof into two: Client and Server. It is, after
+    all, meant to be used on different computers.
+
+    Release 0.05
+
+    CVS export of 0.04 was wrong, giving a nonfunctional tarball.
+
+    Release 0.04
+
+    Found and corrected following bugs w/ROE:
+    - Return of arrays
+    - Cloned objects
+    - All calls are now eval'd. The serve will not break because of
+      typos.
+    Started work to get tasks back into Bof.
+    Re-added support for logging.
+
+    Release 0.03
+
+    Introduced a real Remote Object Executor.
+    Added framework support for SQLite.
+    Made session database agnostic.
+    Framework database uses Class::DBI.
+    Refactored Server into CLI, Connection and Session modules.
+
+2005-03-21
+    Release 0.02
+
+    Removed Business::Bof::Utility::ReportWriter and turned it into
+    separate Business::ReportWriter instead.
+
+    Added SSL to the server. It can now be used on insecure lines.

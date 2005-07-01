@@ -1,0 +1,58 @@
+<perldata>
+  <hashref>
+    <item key="ServerConfig" >
+      <hashref>
+        <item key="home" >.</item>
+        <item key="appclass" >test</item>
+        <item key="host" >0</item>
+        <item key="hostname" >freemoney.org</item>
+        <item key="name" >BOFserver</item>
+        <item key="port" >25190</item>
+        <item key="serviceName" >bofserver</item>
+        <item key="application" >Test</item>
+        <item key="timezone" >Europe/Copenhagen</item>
+        <item key="taskDelay" >180</item>
+        <item key="housekeepingDelay" >300</item>
+        <item key="expireAfter" >3600</item>
+        <item key="logCheck" >600</item>
+        <item key="inc">
+          <arrayref>
+            <item key="0">/usr/local/freemoney/src</item>
+            <item key="1">./t</item>
+          </arrayref>
+        </item>
+      </hashref>
+    </item>
+    <item key="pgfwdb" >
+      <hashref>
+        <item key="level" >3</item>
+        <item key="type" >Pg</item>
+        <item key="host" >localhost</item>
+        <item key="name" >framework</item>
+        <item key="password" />
+        <item key="username" />
+      </hashref>
+    </item>
+    <item key="fwdb" >
+      <hashref>
+        <item key="level" >1</item>
+        <item key="type" >SQLite</item>
+        <item key="host" >localhost</item>
+        <item key="name" >t/framework.sqlite</item>
+        <item key="password" />
+        <item key="username" />
+      </hashref>
+    </item>
+    <item key="ServerSettings" >
+      <hashref>
+        <item key="domdir" >/tmp/test</item>
+      </hashref>
+    </item>
+    <item key="ClientSettings" >
+      <hashref>
+        <item key="basedir" >/test/</item>
+        <item key="forceHttps" >1</item>
+      </hashref>
+    </item>
+  </hashref>
+</perldata>

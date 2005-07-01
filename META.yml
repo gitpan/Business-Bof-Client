@@ -1,0 +1,16 @@
+---
+name: Business::Bof
+version: 0.06
+author:
+  - Kaare Rasmussen <kar at kakidata.dk>
+abstract: Application Server featuring User Control and Remote Object Execution
+license: perl
+requires:
+  LWP::Protocol::https: 0
+  POE: 0.29
+  SOAP::Lite: 0.60
+provides:
+  Business::Bof::Client:
+    file: lib/Business/Bof/Client.pm
+    version: 0.05
+generated_by: Module::Build version 0.261
