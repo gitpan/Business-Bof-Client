@@ -1,4 +1,4 @@
-Business::Bof::Client 0.06
+Business::Bof::Client 0.07
 ==========================
 
 INSTALLATION
@@ -9,6 +9,11 @@ To install this module type the following:
    perl Build
    perl Build test
    perl Build install
+
+NOTE
+
+Build test will currently only work if Business::Bof::Server is
+installed on the same computer.
 
 SSL
 

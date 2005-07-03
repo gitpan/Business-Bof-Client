@@ -1,6 +1,6 @@
 ---
-name: Business::Bof
-version: 0.06
+name: Business::Bof::Client
+version: 0.07
 author:
   - Kaare Rasmussen <kar at kakidata.dk>
 abstract: Application Server featuring User Control and Remote Object Execution
@@ -12,5 +12,5 @@ requires:
 provides:
   Business::Bof::Client:
     file: lib/Business/Bof/Client.pm
-    version: 0.05
+    version: 0.07
 generated_by: Module::Build version 0.261

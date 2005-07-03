@@ -1,10 +1,9 @@
 use Module::Build;
 my $build = Module::Build->new (
-  module_name => 'Business::Bof',
-  dist_name => 'Business::Bof',
+  module_name => 'Business::Bof::Client',
+  dist_name => 'Business::Bof::Client',
   dist_author => 'Kaare Rasmussen <kar at kakidata.dk>',
   dist_abstract => 'Application Server featuring User Control and Remote Object Execution',
-  dist_version => '0.06',
   license => 'perl',
   requires => {
     'POE'                          => '0.29',

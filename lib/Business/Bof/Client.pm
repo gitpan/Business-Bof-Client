@@ -5,7 +5,7 @@ use strict;
 use Scalar::Util qw(blessed refaddr);
 use SOAP::Lite;
 
-our $VERSION = 0.06;
+our $VERSION = 0.07;
 
 sub new {
   my ($type, $params) = @_;
